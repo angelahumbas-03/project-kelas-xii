@@ -1,0 +1,114 @@
+body {
+    background-color:white;
+}
+
+.teks-berjalan {
+    color: blue;
+    display: inline-block;
+    white-space: nowrap;
+    animation: jalan 12s linear infinite;
+}
+
+@keyframes jalan {
+    from {
+        transform: translateX(300%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.paragraf-pertama {
+    color: orange;
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: magenta;
+}
+
+.paragraf-kedua {
+    color: purple;
+}
+
+.paragraf-ketiga {
+    color: palevioletred;
+}
+
+.paragraf-keempat {
+    color: green;
+}
+
+.paragraf-kelima {
+    color: teal;
+}
+
+.hobi-saya {
+    color:chartreuse;
+}
+
+.makanan-favorite {
+    color: tomato;
+}
+
+.paragraf-keenam {
+    color: rgb(164, 102, 22);
+}
+
+.jadwal-pelajaran {
+    text-align: center;
+}
+
+table {
+    margin: 50px auto;
+    border-spacing: 0px;  /*Untuk menghapus jarak spasi antar sel*/
+    border-collapse: collapse;
+}
+
+th {
+    background-color: teal;
+    color: white;
+    padding:10px; /*Jarak antar elemen*/
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px; /*Jarak teks yang ada di dalam sel supaya tidak terlalu rapat*/
+    border: 1px solid teal;
+}
+
+/*tr:nth-child(even) { Setiap baris ganjil diberikan warna blue
+    background-color: whitesmoke;
+} */
+
+.baris-istirahat {
+    background-color:azure;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+td:empty {
+    border:none;
+}
+
+.kontainer-tabel {
+    position: fixed; /*agar tetap berada diposisi yang sama saat layar di scroll*/
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.link-tabel {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba (0,0,0,0.2);
+}

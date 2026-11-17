@@ -1,73 +1,275 @@
+<!-- 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website SMK YADIKA 13</title>
+    <title>Form Biodata Siswa</title>
     <link rel="stylesheet" href="latihan3.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">SMK YADIKA 13</div>
-        <input type="checkbox" id="toggle" class="navbar-checkbox">
-        <label for="toggle" class="navbar-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <ul class="navbar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="dropdown">
-                <a href="#" class="drop-button">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Web Design</a>
-                    <a href="#">SEO</a>
-                    <a href="#">Marketing</a>
-                </div></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-       <!-- SLIDER GAMBAR SEKOLAH -->
-    <section class="slider">
 
-        <div class="slider-container">
+    <h1>Form Biodata Siswa</h1>
 
-            <!-- SLIDE 1 -->
-            <div class="slide slide1">
-                <img src="Images/Sekolah1.jpeg"
-                     alt="Gedung SMK YADIKA 13">
-                <div class="caption">
-                    <h2>Selamat Datang</h2>
-                    <p>Website SMK YADIKA 13</p>
-                </div>
-            </div>
+    <form>
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim"
+               placeholder="Masukkan NIM">
+        <br><br>
 
-            <!-- SLIDE 2 -->
-            <div class="slide slide2">
-                <img src="Images/Sekolah2.jpeg"
-                     alt="Lingkungan SMK YADIKA 13">
-                <div class="caption">
-                    <h2>Lingkungan Sekolah</h2>
-                    <p>Tempat Belajar dan Berkembang</p>
-                </div>
-            </div>
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama"
+               placeholder="Masukkan nama lengkap">
+        <br><br>
 
-            <!-- SLIDE 3 -->
-            <div class="slide slide3">
-                <img src="Images/Sekolah3.jpeg" 
-                     alt="Kegiatan Siswa SMK YADIKA 13">
-                <div class="caption">
-                    <h2>Generasi Siap Kerja</h2>
-                    <p>Belajar, Berkarya, dan Berprestasi</p>
-                </div>
-            </div>
+        <label for="kelas">Kelas:</label>
+        <select id="kelas" name="kelas">
+            <option value="">-- Pilih Kelas --</option>
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+        </select>
+        <br><br>
+
+        <label>Jurusan:</label>
+        <br>
+
+        <input type="radio" id="akl" name="jurusan" value="AKL">
+        <label for="akl">AKL</label>
+        <br>
+
+        <input type="radio" id="mplb" name="jurusan" value="MPLB">
+        <label for="mplb">MPLB</label>
+        <br>
+
+        <input type="radio" id="tjkt" name="jurusan" value="TJKT">
+        <label for="tjkt">TJKT</label>
+        <br>
+
+        <input type="radio" id="tkr" name="jurusan" value="TKR">
+        <label for="tkr">TKR</label>
+        <br><br>
+
+        <label for="tempat">Tempat, Tanggal Lahir:</label>
+        <br>
+
+        <input type="text" id="tempat" name="tempat"
+               placeholder="Tempat lahir">
+        <br>
+
+        <input type="date" id="tanggal" name="tanggal">
+        <br><br>
+
+        <label>Jenis Kelamin:</label>
+        <br>
+
+        <input type="radio" id="laki" name="gender"
+               value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+        <br>
+
+        <input type="radio" id="perempuan" name="gender"
+               value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+        <br><br>
+
+        <label for="alamat">Alamat:</label>
+        <br>
+
+        <textarea id="alamat" name="alamat" rows="3"
+               placeholder="Masukkan alamat">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+
+        <input type="email" id="email" name="email"
+               placeholder="Masukkan email">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Biodata Siswa</title>
+
+    <link rel="stylesheet" href="latihan3.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="icon">🎓</div>
+            <h1>Form Biodata Siswa</h1>
+            <p>Silakan lengkapi data diri Anda dengan benar.</p>
         </div>
-    </section>
 
-    <div class="content">
-        <h1>Welcome to My Website</h1>
-        <p>This is a sample website with a horizontal navigation bar.</p> </div>
-        
+        <form action="#" method="post">
+
+            <!-- NIM -->
+            <div class="form-group">
+                <label for="nim">NIM <span>*</span></label>
+                <input
+                    type="text"
+                    id="nim"
+                    name="nim"
+                    placeholder="Masukkan NIM"
+                    required
+                >
+            </div>
+
+            <!-- Nama Lengkap -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap <span>*</span></label>
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+            </div>
+
+            <!-- Kelas -->
+            <div class="form-group">
+                <label for="kelas">Kelas <span>*</span></label>
+                <select id="kelas" name="kelas" required>
+                    <option value="">-- Pilih Kelas --</option>
+                    <option value="X">X</option>
+                    <option value="XI">XI</option>
+                    <option value="XII">XII</option>
+                </select>
+            </div>
+
+            <!-- Jurusan -->
+            <div class="form-group">
+                <label>Jurusan <span>*</span></label>
+
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="jurusan" value="AKL" required>
+                        <span>AKL</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" name="jurusan" value="MPLB">
+                        <span>MPLB</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" name="jurusan" value="TJKT">
+                        <span>TJKT</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" name="jurusan" value="TKR">
+                        <span>TKR</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Tempat dan Tanggal Lahir -->
+            <div class="form-group">
+                <label>Tempat, Tanggal Lahir <span>*</span></label>
+
+                <div class="birth-group">
+                    <input
+                        type="text"
+                        id="tempat"
+                        name="tempat"
+                        placeholder="Tempat lahir"
+                        required
+                    >
+
+                    <input
+                        type="date"
+                        id="tanggal"
+                        name="tanggal"
+                        required
+                    >
+                </div>
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="form-group">
+                <label>Jenis Kelamin <span>*</span></label>
+
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            id="laki"
+                            name="gender"
+                            value="Laki-laki"
+                            required
+                        >
+                        <span>Laki-laki</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            id="perempuan"
+                            name="gender"
+                            value="Perempuan"
+                        >
+                        <span>Perempuan</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Alamat -->
+            <div class="form-group">
+                <label for="alamat">Alamat <span>*</span></label>
+                <textarea
+                    id="alamat"
+                    name="alamat"
+                    rows="4"
+                    placeholder="Masukkan alamat lengkap"
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email <span>*</span></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="contoh@gmail.com"
+                    required
+                >
+            </div>
+
+            <!-- Tombol -->
+            <div class="button-group">
+                <button type="reset" class="btn-reset">
+                    Reset
+                </button>
+
+                <button type="submit" class="btn-submit">
+                    Kirim Biodata →
+                </button>
+            </div>
+
+            <p class="footer-text">
+                * Wajib diisi sebelum mengirim formulir.
+            </p>
+
+        </form>
+
+    </div>
+
 </body>
 </html>

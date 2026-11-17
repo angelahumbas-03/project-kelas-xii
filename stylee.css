@@ -1,0 +1,19 @@
+body    { background-color: antiquewhite;
+    
+}
+
+.teks-berjalan {
+    color: blue;
+    display: inline-block;
+    white-space: nowrap;
+    animation: teks-berjalan 12s linear infinite;
+}
+
+@keyframes teks-berjalan {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
